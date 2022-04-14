@@ -14,7 +14,7 @@
              <p class ="post__title" style="color:red">{{$errors->first("post.title")}}</p>
           </div>
           <div class ="body">
-              <h2>Body</h2>
+             <h2>Body</h2>
              <textarea name="post[body]" placeholder="I enjoyed playing baseball">{{old("post.body")}}</textarea>
               <p class ="post__body" style="color:red">{{$errors->first("post.body")}}</p>
           </div>
