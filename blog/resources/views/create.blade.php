@@ -20,6 +20,6 @@
           </div>
           <input type="submit" value="create"/>
       </form>
-      <div class ='botton'>[<a href="/">back</a]> </div>
+      <div class ="back">[<a href="/">back</a>] </div>
     </body>
 </html>

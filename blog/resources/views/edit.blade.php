@@ -6,7 +6,7 @@
 　  </head>
     <body>
       <h1>Blog name</h1>
-      <form action="/posts" method="POST">
+      <form action="/posts/{{$post->id}}" method="POST">
           @csrf
           @method('PUT')
           <div class ="title">
@@ -15,7 +15,7 @@
           </div>
           <div class ="body">
              <h2>Body</h2>
-             <textarea type="text" name="post[body]" placeholder="I enjoyed playing baseball">"{{$post->body}}"</textarea>
+             <textarea type="text" name="post[body]" placeholder="I enjoyed playing baseball">{{$post->body}}</textarea>
           </div>
           <input type="submit" value="update"/>
       </form>
