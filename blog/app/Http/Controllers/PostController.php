@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\Http\Requests\PostRequest;
+use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -40,7 +41,7 @@ class PostController extends Controller
         $post ->fill($input)->save();
         return redirect('/posts/'.$post->id);
     }
-    public function destroy (Post $post)
+    public function delete (Post $post)
     {
         $post->delete();
         return redirect('/');
